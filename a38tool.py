@@ -317,7 +317,7 @@ def main():
     parser.add_argument("--verbose", "-v", action="store_true", help="verbose output")
     parser.add_argument("--debug", action="store_true", help="debug output")
 
-    subparsers = parser.add_subparsers(help="actions", required=True)
+    subparsers = parser.add_subparsers(help="actions")
     subparsers.dest = "command"
 
     ExportJSON.add_subparser(subparsers)
